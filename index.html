@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - San Andrea's Fire & Rescue</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background-color: #c22;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        .logo-container {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        
+        .logo {
+            max-width: 150px;
+            height: auto;
+        }
+        
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 0.5rem;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav li {
+            margin: 0 1rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        nav a:hover {
+            text-decoration: underline;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: white;
+        }
+        
+        .section {
+            margin-bottom: 3rem;
+        }
+        
+        h1, h2, h3 {
+            color: #c22;
+        }
+        
+        .hero-image {
+            width: 100%;
+            height: 400px;
+            background-color: #ddd;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .hero-image img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .gallery-item {
+            height: 200px;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* Location photos styling */
+        .locations-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .location-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .location-image {
+            height: 200px;
+            background-color: #ddd;
+            overflow: hidden;
+        }
+        
+        .location-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .location-name {
+            padding: 1rem;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.1rem;
+            background-color: #f9f9f9;
+        }
+        
+        .team-member {
+            display: flex;
+            margin-bottom: 2rem;
+            align-items: center;
+        }
+        
+        .team-photo {
+            width: 150px;
+            height: 150px;
+            background-color: #ddd;
+            margin-right: 2rem;
+            border-radius: 50%;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+        
+        .team-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .team-bio {
+            flex-grow: 1;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .contact-info {
+            margin-bottom: 1rem;
+        }
+        
+        .social-links {
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            color: white;
+            margin: 0 0.5rem;
+            text-decoration: none;
+        }
+        
+        /* Make the site responsive */
+        @media (max-width: 900px) {
+            .locations-container,
+            .image-gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .team-member {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .team-photo {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .locations-container,
+            .image-gallery {
+                grid-template-columns: 1fr;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <!-- Replace with your logo image -->
+            <img src="replace-with-your-logo.png" alt="San Andrea's Fire & Rescue Logo" class="logo">
+        </div>
+        <h1>San Andrea's Fire & Rescue</h1>
+        <p>Serving Our Community Since 1952</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#locations">Our Locations</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="about" class="section">
+            <div class="hero-image">
+                <!-- Replace with your hero image -->
+                <img src="replace-with-hero-image.jpg" alt="San Andrea's Fire & Rescue Team">
+            </div>
+            
+            <h2>About Our Department</h2>
+            <p>Welcome to San Andrea's Fire & Rescue, where dedication meets service in protecting our community. For over 70 years, our department has stood as a pillar of safety and emergency response for the residents of San Andrea and surrounding areas.</p>
+            
+            <p>Our mission is to preserve life, property, and the environment through prevention, education, and emergency response. We pride ourselves on our quick response times, professional training, and commitment to community safety.</p>
+            
+            <p>With state-of-the-art equipment and highly trained personnel, we are prepared to handle everything from structure fires and medical emergencies to hazardous material incidents and natural disasters.</p>
+        </section>
+        
+        <section id="services" class="section">
+            <h2>Our Services</h2>
+            <p>At San Andrea's Fire & Rescue, we provide a comprehensive range of emergency and non-emergency services:</p>
+            
+            <ul>
+                <li>Fire Suppression and Emergency Response</li>
+                <li>Emergency Medical Services</li>
+                <li>Technical Rescue Operations</li>
+                <li>Hazardous Materials Response</li>
+                <li>Fire Prevention and Safety Inspections</li>
+                <li>Public Education and Community Outreach</li>
+                <li>Disaster Preparedness and Response</li>
+            </ul>
+        </section>
+        
+        <section id="locations" class="section">
+            <h2>Our Locations in Los Santos</h2>
+            <p>San Andrea's Fire & Rescue proudly serves various districts throughout Los Santos. Each station is strategically positioned to provide rapid emergency response to our communities:</p>
+            
+            <div class="locations-container">
+                <!-- Location 1 -->
+                <div class="location-card">
+                    <div class="location-image">
+                        <!-- Replace with actual location image -->
+                        <img src="replace-with-downtown-station.jpg" alt="Downtown Station">
+                    </div>
+                    <div class="location-name">
+                        Downtown Station
+                    </div>
+                </div>
+                
+                <!-- Location 2 -->
+                <div class="location-card">
+                    <div class="location-image">
+                        <!-- Replace with actual location image -->
+                        <img src="#" alt="Vinewood Station">
+                    </div>
+                    <div class="location-name">
+                        Vinewood Station
+                    </div>
+                </div>
+                
+                <!-- Location 3 -->
+                <div class="location-card">
+                    <div class="location-image">
+                        <!-- Replace with actual location image -->
+                        <img src="https://images-ext-1.discordapp.net/external/QUkvUzNi2fj92-i37b3xA5uDLAtRnKYyzC_eZETg58w/%3Fv%3D1660639869/http/fivem-mlo.com/cdn/shop/products/DavisFireDepartmentMLO_1200x1200.png?format=webp&quality=lossless&width=1118&height=608" alt="Davis Station">
+                    </div>
+                    <div class="location-name">
+                        Davis Station
+                    </div>
+                </div>
+                
+                <!-- Location 4 -->
+                <div class="location-card">
+                    <div class="location-image">
+                        <!-- Replace with actual location image -->
+                        <img src="#" alt="Rockford Hills Station">
+                    </div>
+                    <div class="location-name">
+                        Rockford Hills Station
+                    </div>
+                </div>
+                
+                <!-- Location 5 -->
+                <div class="location-card">
+                    <div class="location-image">
+                        <!-- Replace with actual location image -->
+                        <img src="replace-with-el-burro-heights-station.jpg" alt="El Burro Heights Station">
+                    </div>
+                    <div class="location-name">
+                        El Burro Heights Station
+                    </div>
+                </div>
+                
+                <!-- Location 6 -->
+                <div class="location-card">
+                    <div class="location-image">
+                        <!-- Replace with actual location image -->
+                        <img src="replace-with-paleto-bay-station.jpg" alt="Paleto Bay Station">
+                    </div>
+                    <div class="location-name">
+                        Paleto Bay Station
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="team" class="section">
+            <h2>Meet Our Team</h2>
+            <p>Our dedicated team of professionals works around the clock to keep San Andrea safe. Get to know some of our leadership:</p>
+            
+            <div class="team-member">
+                <div class="team-photo">
+                    <!-- Replace with chief's photo -->
+                    <img src="replace-with-chief-photo.jpg" alt="Fire Chief">
+                </div>
+                <div class="team-bio">
+                    <h3>Fire Chief John Smith</h3>
+                    <p>Chief Smith has served with San Andrea's Fire & Rescue for over 25 years, beginning as a volunteer firefighter and working his way through the ranks. His leadership has brought innovative training programs and modernized equipment to our department.</p>
+                </div>
+            </div>
+            
+            <div class="team-member">
+                <div class="team-photo">
+                    <!-- Replace with deputy chief's photo -->
+                    <img src="replace-with-deputy-chief-photo.jpg" alt="Deputy Chief">
+                </div>
+                <div class="team-bio">
+                    <h3>Deputy Chief Maria Rodriguez</h3>
+                    <p>Deputy Chief Rodriguez oversees our department's emergency medical services and training division. With a background in both firefighting and paramedic services, she ensures our team stays at the cutting edge of emergency response techniques.</p>
+                </div>
+            </div>
+            
+            <div class="team-member">
+                <div class="team-photo">
+                    <!-- Replace with captain's photo -->
+                    <img src="replace-with-captain-photo.jpg" alt="Captain">
+                </div>
+                <div class="team-bio">
+                    <h3>Captain David Chen</h3>
+                    <p>Captain Chen leads our fire prevention and public education initiatives. His community outreach programs have helped reduce preventable fires in San Andrea by over 30% in the past five years.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="gallery" class="section">
+            <h2>Photo Gallery</h2>
+            <p>Take a look at our department in action and our community involvement:</p>
+            
+            <div class="image-gallery">
+                <div class="gallery-item">
+                    <!-- Replace with your image -->
+                    <img src="replace-with-gallery-image1.jpg" alt="Firefighters in action">
+                </div>
+                <div class="gallery-item">
+                    <!-- Replace with your image -->
+                    <img src="replace-with-gallery-image2.jpg" alt="Community event">
+                </div>
+                <div class="gallery-item">
+                    <!-- Replace with your image -->
+                    <img src="replace-with-gallery-image3.jpg" alt="Training exercise">
+                </div>
+                <div class="gallery-item">
+                    <!-- Replace with your image -->
+                    <img src="replace-with-gallery-image4.jpg" alt="Fire station">
+                </div>
+                <div class="gallery-item">
+                    <!-- Replace with your image -->
+                    <img src="replace-with-gallery-image5.jpg" alt="Equipment demonstration">
+                </div>
+                <div class="gallery-item">
+                    <!-- Replace with your image -->
+                    <img src="replace-with-gallery-image6.jpg" alt="Rescue operation">
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer id="contact">
+        <div class="contact-info">
+            <h2>Contact San Andrea's Fire & Rescue</h2>
+            <p><strong>Emergency:</strong> 911</p>
+            <p><strong>Non-Emergency:</strong> (555) 123-4567</p>
+            <p><strong>Email:</strong> info@sanandreasfirerescue.org</p>
+            <p><strong>Main Station Address:</strong> 1234 Firefighter Avenue, San Andrea, CA 90000</p>
+        </div>
+        
+        <div class="social-links">
+            <a href="#">Discord</a> |
+        </div>
+        
+        <p>&copy; 2025 San Andrea's Fire & Rescue. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
