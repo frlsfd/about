@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -70,7 +71,9 @@
             margin-bottom: 3rem;
         }
         
-        h1, h2, h3 {
+        h1,
+        h2,
+        h3 {
             color: #c22;
         }
         
@@ -111,8 +114,8 @@
             height: 100%;
             object-fit: cover;
         }
-        
         /* Location photos styling */
+        
         .locations-container {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -124,7 +127,7 @@
             border: 1px solid #ddd;
             border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         
         .location-image {
@@ -172,8 +175,8 @@
         .team-bio {
             flex-grow: 1;
         }
-        
         /* Uniform section styling */
+        
         .uniforms-section {
             margin-top: 3rem;
         }
@@ -192,7 +195,7 @@
             border: 1px solid #ddd;
             border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             margin-bottom: 2rem;
         }
         
@@ -261,24 +264,21 @@
             margin: 0 0.5rem;
             text-decoration: none;
         }
-        
         /* Make the site responsive */
+        
         @media (max-width: 900px) {
             .locations-container,
             .image-gallery {
                 grid-template-columns: repeat(2, 1fr);
             }
-            
             .team-member {
                 flex-direction: column;
                 text-align: center;
             }
-            
             .team-photo {
                 margin-right: 0;
                 margin-bottom: 1rem;
             }
-            
             .uniform-types {
                 flex-direction: column;
             }
@@ -289,18 +289,17 @@
             .image-gallery {
                 grid-template-columns: 1fr;
             }
-            
             nav ul {
                 flex-direction: column;
                 align-items: center;
             }
-            
             nav li {
                 margin: 0.5rem 0;
             }
         }
     </style>
 </head>
+
 <body>
     <header>
         <div class="logo-container">
@@ -310,7 +309,7 @@
         <h1>San Andrea's Fire & Rescue</h1>
         <p>Serving Our Community Since 1952</p>
     </header>
-    
+
     <nav>
         <ul>
             <li><a href="#about">About Us</a></li>
@@ -326,26 +325,26 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    
+
     <main>
         <section id="about" class="section">
             <div class="hero-image">
                 <!-- Replace with your hero image -->
                 <img src="https://r2.fivemanage.com/image/NO6aTMvT0zmb.png" alt="San Andrea's Fire & Rescue Team">
             </div>
-            
+
             <h2>About Our Department</h2>
             <p>Welcome to San Andrea's Fire & Rescue, where dedication meets service in protecting our community. For over 70 years, our department has stood as a pillar of safety and emergency response for the residents of San Andrea and surrounding areas.</p>
-            
+
             <p>Our mission is to preserve life, property, and the environment through prevention, education, and emergency response. We pride ourselves on our quick response times, professional training, and commitment to community safety.</p>
-            
+
             <p>With state-of-the-art equipment and highly trained personnel, we are prepared to handle everything from structure fires and medical emergencies to hazardous material incidents and natural disasters.</p>
         </section>
-        
+
         <section id="services" class="section">
             <h2>Our Services</h2>
             <p>At San Andrea's Fire & Rescue, we provide a comprehensive range of emergency and non-emergency services:</p>
-            
+
             <ul>
                 <li>Fire Suppression and Emergency Response</li>
                 <li>Emergency Medical Services</li>
@@ -356,32 +355,141 @@
                 <li>Disaster Preparedness and Response</li>
             </ul>
         </section>
-                <section id="vehicles" class="section">
+        <section id="vehicles" class="section">
             <h2>Our Vehicles</h2>
             <p>San Andrea's Fire & Rescue proudly serves various vehicles:</p>
-            
+
             <div class="locations-container">
-                            <!-- Location 3 -->
+                <!-- Location 3 -->
                 <div class="location-card">
                     <div class="location-image">
                         <!-- Replace with actual location image -->
-                        <img src="https://r2.fivemanage.com/image/xgOV8g13jvGn.png" alt="Davis Station">
+                        <img src="https://r2.fivemanage.com/image/eMWrHIEyNTQB.png" alt="Ford Ambulance">
                     </div>
                     <div class="location-name">
-                        Name: FireTruck
-                       <br> Model Name: firetruk</br>
+                        <br> Name: Brute Ambulance</br>
+                        <br> Model Name: fordambo</br>
                     </div>
                 </div>
-                
+                <div class="location-card">
+                    <div class="location-image">
+                        <!-- Replace with actual location image -->
+                        <img src="https://r2.fivemanage.com/image/063BC4pi1BkC.png" alt="16FPIUAMR">
+                    </div>
+                    <div class="location-name">
+                        <br> Name: 16FPIUAMR </br>
+                        <br> Model Name: 16FPIUAMR</br>
+                    </div>
+                </div>
+                <div class="location-card">
+                    <div class="location-image">
+                        <!-- Replace with actual location image -->
+                        <img src="https://r2.fivemanage.com/image/xgOV8g13jvGn.png" alt="FireTruck">
+                    </div>
+                    <div class="location-name">
+                        <br> Name: </br>
+                        <br> Model Name: firetruk</br>
+                    </div>
+                </div>
+                <div class="location-card">
+                    <div class="location-image">
+                        <!-- Replace with actual location image -->
+                        <img src="https://r2.fivemanage.com/image/xgOV8g13jvGn.png" alt="FireTruck">
+                    </div>
+                    <div class="location-name">
+                        <br> Name: </br>
+                        <br> Model Name: firetruk</br>
+                    </div>
+                </div>
+                <div class="location-card">
+                    <div class="location-image">
+                        <!-- Replace with actual location image -->
+                        <img src="https://r2.fivemanage.com/image/xgOV8g13jvGn.png" alt="FireTruck">
+                    </div>
+                    <div class="location-name">
+                        <br> Name: </br>
+                        <br> Model Name: firetruk</br>
+                    </div>
+                </div>
+                <div class="location-card">
+                    <div class="location-image">
+                        <!-- Replace with actual location image -->
+                        <img src="https://r2.fivemanage.com/image/xgOV8g13jvGn.png" alt="FireTruck">
+                    </div>
+                    <div class="location-name">
+                        <br> Name: </br>
+                        <br> Model Name: firetruk</br>
+                    </div>
+                </div>
+                <div class="location-card">
+                    <div class="location-image">
+                        <!-- Replace with actual location image -->
+                        <img src="https://r2.fivemanage.com/image/xgOV8g13jvGn.png" alt="FireTruck">
+                    </div>
+                    <div class="location-name">
+                        <br> Name: </br>
+                        <br> Model Name: firetruk</br>
+                    </div>
+                </div>
+                <div class="location-card">
+                    <div class="location-image">
+                        <!-- Replace with actual location image -->
+                        <img src="https://r2.fivemanage.com/image/xgOV8g13jvGn.png" alt="FireTruck">
+                    </div>
+                    <div class="location-name">
+                        <br> Name: </br>
+                        <br> Model Name: firetruk</br>
+                    </div>
+                </div>
+                <div class="location-card">
+                    <div class="location-image">
+                        <!-- Replace with actual location image -->
+                        <img src="https://r2.fivemanage.com/image/xgOV8g13jvGn.png" alt="FireTruck">
+                    </div>
+                    <div class="location-name">
+                        <br> Name: </br>
+                        <br> Model Name: firetruk</br>
+                    </div>
+                </div>
+                <div class="location-card">
+                    <div class="location-image">
+                        <!-- Replace with actual location image -->
+                        <img src="https://r2.fivemanage.com/image/xgOV8g13jvGn.png" alt="FireTruck">
+                    </div>
+                    <div class="location-name">
+                        <br> Name: </br>
+                        <br> Model Name: firetruk</br>
+                    </div>
+                </div>
+                <div class="location-card">
+                    <div class="location-image">
+                        <!-- Replace with actual location image -->
+                        <img src="https://r2.fivemanage.com/image/xgOV8g13jvGn.png" alt="FireTruck">
+                    </div>
+                    <div class="location-name">
+                        <br> Name: </br>
+                        <br> Model Name: firetruk</br>
+                    </div>
+                </div>
+                <div class="location-card">
+                    <div class="location-image">
+                        <!-- Replace with actual location image -->
+                        <img src="https://r2.fivemanage.com/image/xgOV8g13jvGn.png" alt="FireTruck">
+                    </div>
+                    <div class="location-name">
+                        <br> Name: </br>
+                        <br> Model Name: firetruk</br>
+                    </div>
+                </div>
             </div>
-            
+
         </section>
         <section id="locations" class="section">
             <h2>Our Locations in Los Santos</h2>
             <p>San Andrea's Fire & Rescue proudly serves various districts throughout Los Santos. Each station is strategically positioned to provide rapid emergency response to our communities:</p>
-            
+
             <div class="locations-container">
-                            <!-- Location 3 -->
+                <!-- Location 3 -->
                 <div class="location-card">
                     <div class="location-image">
                         <!-- Replace with actual location image -->
@@ -398,7 +506,7 @@
                         <img src="https://r2.fivemanage.com/image/isJHOkoOTf8c.png" alt="Downtown Station">
                     </div>
                     <div class="location-name">
-                        Sandy Shores Station Postal: 
+                        Sandy Shores Station Postal:
                     </div>
                 </div>
                 <!-- Location 1 -->
@@ -408,12 +516,12 @@
                         <img src="https://r2.fivemanage.com/image/HRbvNxHHN2T5.png" alt="Downtown Station">
                     </div>
                     <div class="location-name">
-                        Fort Zancudo Station Postal: 
+                        Fort Zancudo Station Postal:
                     </div>
                 </div>
-                
 
-                
+
+
                 <!-- Location 4 -->
                 <div class="location-card">
                     <div class="location-image">
@@ -424,7 +532,7 @@
                         Rockford Hills Station Postal:
                     </div>
                 </div>
-                
+
                 <!-- Location 5 -->
                 <div class="location-card">
                     <div class="location-image">
@@ -435,7 +543,7 @@
                         El Burro Heights Station Postal: 794
                     </div>
                 </div>
-                
+
                 <!-- Location 6 -->
                 <div class="location-card">
                     <div class="location-image">
@@ -446,24 +554,24 @@
                         Paleto Bay Station Postal:
                     </div>
                 </div>
-                                <!-- Location 1 -->
+                <!-- Location 1 -->
                 <div class="location-card">
                     <div class="location-image">
                         <!-- Replace with actual location image -->
                         <img src="https://r2.fivemanage.com/image/ExsaGptrltQn.png" alt="LSIA Station">
                     </div>
                     <div class="location-name">
-                      LSIA Fire Station 
+                        LSIA Fire Station
                     </div>
                 </div>
             </div>
-            
+
         </section>
-        
+
         <section id="team" class="section">
             <h2>Meet Our Team</h2>
             <p>Our dedicated team of professionals works around the clock to keep San Andrea safe. Get to know some of our leadership:</p>
-            
+
             <div class="team-member">
                 <div class="team-photo">
                     <!-- Replace with chief's photo -->
@@ -474,7 +582,7 @@
                     <p>Role: Battalion Chief</p>
                 </div>
             </div>
-            
+
             <div class="team-member">
                 <div class="team-photo">
                     <!-- Replace with deputy chief's photo -->
@@ -485,7 +593,7 @@
                     <p>Role: Battalion Chief:</p>
                 </div>
             </div>
-            
+
             <div class="team-member">
                 <div class="team-photo">
                     <!-- Replace with captain's photo -->
@@ -497,10 +605,10 @@
                 </div>
             </div>
         </section>
-          
+
         <section id="callsigns" class="section uniforms-section">
             <h2>LSFD & EMS Call Signs</h2>>
-            
+
             <div class="uniform-types">
                 <!-- Firefighter Uniform -->
                 <div class="uniform-card">
@@ -512,15 +620,12 @@
                     <div class="uniform-details">
                         <h4>LSFD & EMS Call Signs</h4>
                         <div class="uniform-specs">
-                            Ambulance: AMB-(any number)<br>
-                            Fire Truck: ENG-(any number)<br> 
-                            Fire Department Supervisor: FDSV-(any number) [only for Cpt. rank and above]<br>
-                            Air Ambulance: AAMB-(any number)<br>
+                            Ambulance: AMB-(any number)<br> Fire Truck: ENG-(any number)<br> Fire Department Supervisor: FDSV-(any number) [only for Cpt. rank and above]<br> Air Ambulance: AAMB-(any number)<br>
                         </div>
-                        </section>
-                                <section id="ranks" class="section uniforms-section">
+        </section>
+        <section id="ranks" class="section uniforms-section">
             <h2>LSFD & EMS Ranks</h2>
-            
+
             <div class="uniform-types">
                 <!-- Firefighter Uniform -->
                 <div class="uniform-card">
@@ -532,25 +637,25 @@
                     <div class="uniform-details">
                         <h4>LSFD & EMS Ranks</h4>
                         <div class="uniform-specs">
-<br>Battalion Chief (Fire & EMS)</br>
+                            <br>Battalion Chief (Fire & EMS)</br>
 
-<br>Assistant Chief (Fire & EMS)</br>
+                            <br>Assistant Chief (Fire & EMS)</br>
 
-<br>Captain (Fire & EMS)</br>
+                            <br>Captain (Fire & EMS)</br>
 
-<br>Apparatus Operator (Fire) / @Recruit III (EMS)</br>
+                            <br>Apparatus Operator (Fire) / @Recruit III (EMS)</br>
 
-<br>Engineer (Fire) / @Recruit II (EMS)</br>
+                            <br>Engineer (Fire) / @Recruit II (EMS)</br>
 
-<br>Firefighter (Fire) / @Recruit I (EMS)</br>
+                            <br>Firefighter (Fire) / @Recruit I (EMS)</br>
 
-<br>Cadet (Fire & EMS)</br>
+                            <br>Cadet (Fire & EMS)</br>
                         </div>
-                        </section>
+        </section>
         <section id="uniforms" class="section uniforms-section">
             <h2>Department Uniforms</h2>
             <p>San Andrea's Fire & Rescue personnel adhere to strict uniform standards based on their roles and duties. Our uniforms are designed for functionality, safety, and easy identification in emergency situations:</p>
-            
+
             <div class="uniform-types">
                 <!-- Firefighter Uniform -->
                 <div class="uniform-card">
@@ -562,37 +667,21 @@
                     <div class="uniform-details">
                         <h4>Station Uniform</h4>
                         <div class="uniform-specs">
-                            Mask: 273<br>
-                            Upper body: 81<br> 
-                            Lower body: 264<br>
-                            Shoes: 25<br>
-                            Shirt & accessory: 54<br>
-                            Body armor & accessory: 138<br>
-                            Shirt overlay & jackets: 722
+                            Mask: 273<br> Upper body: 81<br> Lower body: 264<br> Shoes: 25<br> Shirt & accessory: 54<br> Body armor & accessory: 138<br> Shirt overlay & jackets: 722
                         </div>
-                        
+
                         <h4>Fire Call Uniform</h4>
                         <div class="uniform-specs">
-                            Mask: 247<br>
-                            Upper body: 82<br>
-                            Lower body: 120<br>
-                            Shoes: 25<br>
-                            Shirt & accessory: 325(mask on)/326 (mask off)<br>
-                            Body armor and accessory: 138<br>
-                            Shirt overlay & jackets: 697
+                            Mask: 247<br> Upper body: 82<br> Lower body: 120<br> Shoes: 25<br> Shirt & accessory: 325(mask on)/326 (mask off)<br> Body armor and accessory: 138<br> Shirt overlay & jackets: 697
                         </div>
-                        
+
                         <h4>Formal Uniform</h4>
                         <div class="uniform-specs">
-                            Upper body: 82<br>
-                            Lower body: 96<br>
-                            Shoes: 25<br>
-                            Shirt & accessory: 54<br>
-                            Shirt overlay & jackets: 717
+                            Upper body: 82<br> Lower body: 96<br> Shoes: 25<br> Shirt & accessory: 54<br> Shirt overlay & jackets: 717
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- EMS/Medic Uniform -->
                 <div class="uniform-card">
                     <div class="uniform-header">EMS/Medic</div>
@@ -603,18 +692,12 @@
                     <div class="uniform-details">
                         <h4>Standard Uniform</h4>
                         <div class="uniform-specs">
-                            Mask: 273<br>
-                            Upper body: 82<br>
-                            Lower body: 126<br>
-                            Shoes: 25<br>
-                            Shirt & accessory: 315<br>
-                            Body armor & accessory: 138<br>
-                            Shirt overlay & jackets: 723
+                            Mask: 273<br> Upper body: 82<br> Lower body: 126<br> Shoes: 25<br> Shirt & accessory: 315<br> Body armor & accessory: 138<br> Shirt overlay & jackets: 723
                         </div>
                         <p>This is the standard uniform, but medical personnel may create their own outfit as long as it clearly identifies them as Medical personnel.</p>
                     </div>
                 </div>
-                
+
                 <!-- Pilot Uniform -->
                 <div class="uniform-card">
                     <div class="uniform-header">Pilot</div>
@@ -625,19 +708,12 @@
                     <div class="uniform-details">
                         <h4>Standard Uniform</h4>
                         <div class="uniform-specs">
-                            Upper body: 77<br>
-                            Lower body: 262<br>
-                            Bags & parachutes: 157 (optional)<br>
-                            Shoes: 25<br>
-                            Shirt & accessory: 54<br>
-                            Body armor & accessory: 113<br>
-                            Shirt overlay & jacket: 678<br>
-                            Hats & helmets: 238
+                            Upper body: 77<br> Lower body: 262<br> Bags & parachutes: 157 (optional)<br> Shoes: 25<br> Shirt & accessory: 54<br> Body armor & accessory: 113<br> Shirt overlay & jacket: 678<br> Hats & helmets: 238
                         </div>
                         <p>Pilots may add a face mask or glasses to their uniform if desired.</p>
                     </div>
                 </div>
-                
+
                 <!-- Hazmat Uniform -->
                 <div class="uniform-card">
                     <div class="uniform-header">Hazmat</div>
@@ -648,27 +724,17 @@
                     <div class="uniform-details">
                         <h4>Standard Uniform</h4>
                         <div class="uniform-specs">
-                            Mask: 46<br>
-                            Upper Body: 71<br>
-                            Lower Body: 40 (Texture: 3)<br>
-                            Bags: 0<br>
-                            Shoes: 25<br>
-                            Scarfs: 0<br>
-                            Shirt: 62 (Texture: 3)<br>
-                            Body Armor: 0<br>
-                            Badges: 0<br>
-                            Shirt Overlay: 67 (Texture: 3)<br>
-                            Hat: 222 (Texture: 6) [Optional]
+                            Mask: 46<br> Upper Body: 71<br> Lower Body: 40 (Texture: 3)<br> Bags: 0<br> Shoes: 25<br> Scarfs: 0<br> Shirt: 62 (Texture: 3)<br> Body Armor: 0<br> Badges: 0<br> Shirt Overlay: 67 (Texture: 3)<br> Hat: 222 (Texture: 6) [Optional]
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
+
         <section id="gallery" class="section">
             <h2>Photo Gallery</h2>
             <p>Take a look at our department in action and our community involvement:</p>
-            
+
             <div class="image-gallery">
                 <div class="gallery-item">
                     <!-- Replace with your image -->
@@ -697,7 +763,7 @@
             </div>
         </section>
     </main>
-    
+
     <footer id="contact">
         <div class="contact-info">
             <h2>Contact San Andrea's Fire & Rescue</h2>
@@ -706,4 +772,5 @@
         <p>&copy; San Andrea's Fire & Rescue. All Rights Reserved.</p>
     </footer>
 </body>
+
 </html>
