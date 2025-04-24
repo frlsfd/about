@@ -492,6 +492,368 @@
                 gap: 1rem;
             }
         }
+          :root {
+            --primary: #d9230f;
+            --secondary: #333333;
+            --light: #f5f5f5;
+            --dark: #212121;
+            --accent: #ffc107;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        
+        .section-header:after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary);
+        }
+        
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .section-header p {
+            font-size: 1.2rem;
+            color: var(--secondary);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .vehicle-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .vehicle-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .vehicle-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        
+        .vehicle-image {
+            height: 220px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .vehicle-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .vehicle-card:hover .vehicle-image img {
+            transform: scale(1.05);
+        }
+        
+        .vehicle-info {
+            padding: 1.5rem;
+            border-top: 4px solid var(--primary);
+        }
+        
+        .vehicle-name {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+        
+        .vehicle-model {
+            font-size: 0.9rem;
+            color: var(--secondary);
+            font-style: italic;
+            display: block;
+            padding: 0.25rem 0;
+        }
+        
+        .vehicle-type {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background-color: var(--accent);
+            color: var(--dark);
+            border-radius: 50px;
+            font-size: 0.8rem;
+            margin-top: 0.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        
+        .emergency {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .support {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        .specialized {
+            background-color: #2ecc71;
+            color: white;
+        }
+        
+        .fire {
+            background-color: #e74c3c;
+            color: white;
+        }
+        
+        .badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: rgba(0,0,0,0.6);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            .vehicle-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+            
+            .section-header h2 {
+                font-size: 2rem;
+            }
+        }
+        
+                :root {
+            --primary: #d9230f;
+            --secondary: #333333;
+            --light: #f5f5f5;
+            --dark: #212121;
+            --accent: #ffc107;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        
+        .section-header:after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary);
+        }
+        
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .section-header p {
+            font-size: 1.2rem;
+            color: var(--secondary);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .locations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .location-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .location-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        
+        .location-image {
+            height: 220px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .location-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .location-card:hover .location-image img {
+            transform: scale(1.05);
+        }
+        
+        .location-info {
+            padding: 1.5rem;
+            border-top: 4px solid var(--primary);
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .location-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+        
+        .location-postal {
+            font-size: 1rem;
+            color: var(--secondary);
+            margin-top: auto;
+        }
+        
+        .location-postal span {
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .location-status {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: var(--accent);
+            color: var(--dark);
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        .location-type {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background-color: #3498db;
+            color: white;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            margin-top: 0.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        
+        .urban {
+            background-color: #3498db;
+        }
+        
+        .rural {
+            background-color: #2ecc71;
+        }
+        
+        .airport {
+            background-color: #9b59b6;
+        }
+        
+        .military {
+            background-color: #34495e;
+        }
+        
+        .luxury {
+            background-color: #f1c40f;
+            color: var(--dark);
+        }
+        
+        .location-amenities {
+            margin-top: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .amenity {
+            font-size: 0.8rem;
+            padding: 0.15rem 0.5rem;
+            background-color: var(--light);
+            border-radius: 4px;
+            color: var(--secondary);
+        }
+        
+        @media (max-width: 768px) {
+            .locations-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+            
+            .section-header h2 {
+                font-size: 2rem;
+            }
+        }
     </style>
 </head>
 
@@ -580,286 +942,362 @@
             </ul>
         </section>
         <section id="vehicles" class="section">
-            <h2>Our Vehicles</h2>
-            <p>San Andrea's Fire & Rescue proudly serves various vehicles:</p>
-
-            <div class="locations-container">
-                <!-- Location 3 -->
-                <div class="location-card">
-                    <div class="location-image">
-                        <!-- Replace with actual location image -->
+      <div class="container">
+        <section id="vehicles">
+            <div class="section-header">
+                <h2>Our Vehicle Fleet</h2>
+                <p>San Andrea's Fire & Rescue proudly maintains a diverse fleet of emergency and support vehicles to serve our community with excellence and reliability.</p>
+            </div>
+            
+            <div class="vehicle-grid">
+                <!-- Brute Ambulance -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
                         <img src="https://r2.fivemanage.com/image/KMaqLjOfZ5QK.png" alt="Ford Ambulance">
+                        <span class="badge">Primary Response</span>
                     </div>
-                    <div class="location-name">
-                        <br> Name: Brute Ambulance</br>
-                        <br> Model Name: fordambo</br>
+                    <div class="vehicle-info">
+                        <h3 class="vehicle-name">Brute Ambulance</h3>
+                        <span class="vehicle-model">Model: fordambo</span>
+                        <div class="vehicle-type emergency">Medical Response</div>
                     </div>
                 </div>
-                <div class="location-card">
-                    <div class="location-image">
-                        <!-- Replace with actual location image -->
+                
+                <!-- 16FPIUAMR -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
                         <img src="https://r2.fivemanage.com/image/3E7xAEtEhBzk.png" alt="16FPIUAMR">
                     </div>
-                    <div class="location-name">
-                        <br> Name: 16FPIUAMR </br>
-                        <br> Model Name: 16FPIUAMR</br>
+                    <div class="vehicle-info">
+                        <h3 class="vehicle-name">16FPIUAMR</h3>
+                        <span class="vehicle-model">Model: 16FPIUAMR</span>
+                        <div class="vehicle-type support">Patrol Unit</div>
                     </div>
                 </div>
-                <div class="location-card">
-                    <div class="location-image">
-                        <!-- Replace with actual location image -->
+                
+                <!-- 18TAHOEAMR -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
                         <img src="https://r2.fivemanage.com/image/qGITprdaruY5.png" alt="18TAHOEAMR">
                     </div>
-                    <div class="location-name">
-                        <br> Name: 18TAHOEAMR</br>
-                        <br> Model Name: 18TAHOEAMR</br>
+                    <div class="vehicle-info">
+                        <h3 class="vehicle-name">18TAHOEAMR</h3>
+                        <span class="vehicle-model">Model: 18TAHOEAMR</span>
+                        <div class="vehicle-type support">Tactical Response</div>
                     </div>
                 </div>
-                <div class="location-card">
-                    <div class="location-image">
-                        <!-- Replace with actual location image -->
+                
+                <!-- 22FPIUAMR -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
                         <img src="https://r2.fivemanage.com/image/Pr7R2RTGgtgi.png" alt="22FPIUAMR">
                     </div>
-                    <div class="location-name">
-                        <br> Name: 22FPIUAMR</br>
-                        <br> Model Name: 22FPIUAMR</br>
+                    <div class="vehicle-info">
+                        <h3 class="vehicle-name">22FPIUAMR</h3>
+                        <span class="vehicle-model">Model: 22FPIUAMR</span>
+                        <div class="vehicle-type support">Patrol Unit</div>
                     </div>
                 </div>
-                <div class="location-card">
-                    <div class="location-image">
-                        <!-- Replace with actual location image -->
+                
+                <!-- amr13fpiu -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
                         <img src="https://r2.fivemanage.com/image/jHPqnYtpT4r8.png" alt="amr13fpiu">
                     </div>
-                    <div class="location-name">
-                        <br> Name: amr13fpiu</br>
-                        <br> Model Name: amr13fpiu</br>
+                    <div class="vehicle-info">
+                        <h3 class="vehicle-name">AMR13FPIU</h3>
+                        <span class="vehicle-model">Model: amr13fpiu</span>
+                        <div class="vehicle-type support">Rapid Response</div>
                     </div>
                 </div>
-                <div class="location-card">
-                    <div class="location-image">
-                        <!-- Replace with actual location image -->
+                
+                <!-- AMREXPRESS -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
                         <img src="https://r2.fivemanage.com/image/uc6daxAoyGmg.png" alt="AMREXPRESS">
                     </div>
-                    <div class="location-name">
-                        <br> Name: AMREXPRESS</br>
-                        <br> Model Name: AMREXPRESS</br>
+                    <div class="vehicle-info">
+                        <h3 class="vehicle-name">AMR Express</h3>
+                        <span class="vehicle-model">Model: AMREXPRESS</span>
+                        <div class="vehicle-type emergency">Medical Response</div>
                     </div>
                 </div>
-                <div class="location-card">
-                    <div class="location-image">
-                        <!-- Replace with actual location image -->
+                
+                <!-- amrfreightl -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
                         <img src="https://r2.fivemanage.com/image/EpclIklCRrF3.png" alt="amrfreightl">
                     </div>
-                    <div class="location-name">
-                        <br> Name: amrfreightl</br>
-                        <br> Model Name: amrfreightl</br>
+                    <div class="vehicle-info">
+                        <h3 class="vehicle-name">AMR Freightliner</h3>
+                        <span class="vehicle-model">Model: amrfreightl</span>
+                        <div class="vehicle-type specialized">Heavy Transport</div>
                     </div>
                 </div>
-                <div class="location-card">
-                    <div class="location-image">
-                        <!-- Replace with actual location image -->
+                
+                <!-- amrheli -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
                         <img src="https://r2.fivemanage.com/image/ocfZWyONb6vn.jpg" alt="amrheli">
+                        <span class="badge">Air Support</span>
                     </div>
-                    <div class="location-name">
-                        <br> Name: amrheli</br>
-                        <br> Model Name: amrheli</br>
+                    <div class="vehicle-info">
+                        <h3 class="vehicle-name">AMR Helicopter</h3>
+                        <span class="vehicle-model">Model: amrheli</span>
+                        <div class="vehicle-type emergency">Med One</div>
                     </div>
                 </div>
-                <div class="location-card">
-                    <div class="location-image">
-                        <!-- Replace with actual location image -->
+                
+                <!-- amrvan -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
                         <img src="https://r2.fivemanage.com/image/J294eTFr0ADX.png" alt="amrvan">
                     </div>
-                    <div class="location-name">
-                        <br> Name: amrvan</br>
-                        <br> Model Name: amrvan</br>
+                    <div class="vehicle-info">
+                        <h3 class="vehicle-name">AMR Van</h3>
+                        <span class="vehicle-model">Model: amrvan</span>
+                        <div class="vehicle-type emergency">Medical Transport</div>
                     </div>
                 </div>
-                <div class="location-card">
-                    <div class="location-image">
-                        <!-- Replace with actual location image -->
+                
+                <!-- LSFDTRUCK -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
                         <img src="https://r2.fivemanage.com/image/HBLABzBOa3l9.png" alt="LSFDTRUCK">
                     </div>
-                    <div class="location-name">
-                        <br> Name: LSFDTRUCK</br>
-                        <br> Model Name: LSFDTRUCK</br>
+                    <div class="vehicle-info">
+                        <h3 class="vehicle-name">LSFD Truck</h3>
+                        <span class="vehicle-model">Model: LSFDTRUCK</span>
+                        <div class="vehicle-type fire">Fire Response</div>
                     </div>
                 </div>
-                <div class="location-card">
-                    <div class="location-image">
-                        <!-- Replace with actual location image -->
+                
+                <!-- LSFDTRUCK2 -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
                         <img src="https://r2.fivemanage.com/image/m7Atmb2lC0yw.jpg" alt="LSFDTRUCK2">
                     </div>
-                    <div class="location-name">
-                        <br> Name: LSFDTRUCK2</br>
-                        <br> Model Name: LSFDTRUCK2</br>
+                    <div class="vehicle-info">
+                        <h3 class="vehicle-name">LSFD Truck 2</h3>
+                        <span class="vehicle-model">Model: LSFDTRUCK2</span>
+                        <div class="vehicle-type fire">Fire Response</div>
                     </div>
                 </div>
-                <div class="location-card">
-                    <div class="location-image">
-                        <!-- Replace with actual location image -->
+                
+                <!-- LSFDTRUCK3 -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
                         <img src="https://r2.fivemanage.com/image/JGkWUucTk3W5.png" alt="LSFDTRUCK3">
                     </div>
-                    <div class="location-name">
-                        <br> Name: LSFDTRUCK3</br>
-                        <br> Model Name: LSFDTRUCK3</br>
+                    <div class="vehicle-info">
+                        <h3 class="vehicle-name">LSFD Truck 3</h3>
+                        <span class="vehicle-model">Model: LSFDTRUCK3</span>
+                        <div class="vehicle-type fire">Fire Response</div>
                     </div>
                 </div>
-                <div class="location-card">
-                    <div class="location-image">
-                        <!-- Replace with actual location image -->
+                
+                <!-- LSFD -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
                         <img src="https://r2.fivemanage.com/image/LDAzL40IU5XV.jpg" alt="LSFD">
                     </div>
-                    <div class="location-name">
-                        <br> Name: LSFD</br>
-                        <br> Model Name: LSFD</br>
+                    <div class="vehicle-info">
+                        <h3 class="vehicle-name">LSFD</h3>
+                        <span class="vehicle-model">Model: LSFD</span>
+                        <div class="vehicle-type fire">Fire Response</div>
                     </div>
                 </div>
-                <div class="location-card">
-                    <div class="location-image">
-                        <!-- Replace with actual location image -->
+                
+                <!-- LSFD2 -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
                         <img src="https://r2.fivemanage.com/image/iWCknUOiK4IK.png" alt="LSFD2">
                     </div>
-                    <div class="location-name">
-                        <br> Name: LSFD2</br>
-                        <br> Model Name: LSFD2</br>
+                    <div class="vehicle-info">
+                        <h3 class="vehicle-name">LSFD 2</h3>
+                        <span class="vehicle-model">Model: LSFD2</span>
+                        <div class="vehicle-type fire">Fire Response</div>
                     </div>
                 </div>
-                <div class="location-card">
-                    <div class="location-image">
-                        <!-- Replace with actual location image -->
+                
+                <!-- LSFD3 -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
                         <img src="https://r2.fivemanage.com/image/rpwUCNWORavd.png" alt="LSFD3">
                     </div>
-                    <div class="location-name">
-                        <br> Name: LSFD3</br>
-                        <br> Model Name: LSFD3</br>
+                    <div class="vehicle-info">
+                        <h3 class="vehicle-name">LSFD 3</h3>
+                        <span class="vehicle-model">Model: LSFD3</span>
+                        <div class="vehicle-type fire">Fire Response</div>
                     </div>
                 </div>
-                <div class="location-card">
-                    <div class="location-image">
-                        <!-- Replace with actual location image -->
+                
+                <!-- LSFD4 -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
                         <img src="https://r2.fivemanage.com/image/Ib19vTdhw6CG.png" alt="LSFD4">
                     </div>
-                    <div class="location-name">
-                        <br> Name: LSFD4</br>
-                        <br> Model Name: LSFD4</br>
+                    <div class="vehicle-info">
+                        <h3 class="vehicle-name">LSFD 4</h3>
+                        <span class="vehicle-model">Model: LSFD4</span>
+                        <div class="vehicle-type fire">Fire Response</div>
                     </div>
                 </div>
-                <div class="location-card">
-                    <div class="location-image">
-                        <!-- Replace with actual location image -->
+                
+                <!-- LSFD5 -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
                         <img src="https://r2.fivemanage.com/image/N13K24HLY55b.png" alt="LSFD5">
                     </div>
-                    <div class="location-name">
-                        <br> Name: LSFD5</br>
-                        <br> Model Name: LSFD5</br>
+                    <div class="vehicle-info">
+                        <h3 class="vehicle-name">LSFD 5</h3>
+                        <span class="vehicle-model">Model: LSFD5</span>
+                        <div class="vehicle-type fire">Command Unit</div>
                     </div>
                 </div>
-                <div class="location-card">
-                    <div class="location-image">
-                        <!-- Replace with actual location image -->
+                
+                <!-- FireTruck -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
                         <img src="https://r2.fivemanage.com/image/xgOV8g13jvGn.png" alt="FireTruck">
+                        <span class="badge">Primary Fire Unit</span>
                     </div>
-                    <div class="location-name">
-                        <br> Name: FireTruck</br>
-                        <br> Model Name: firetruk</br>
-                    </div>
-                </div>
-
-
-        </section>
-        <section id="locations" class="section">
-            <h2>Our Locations in Los Santos</h2>
-            <p>San Andrea's Fire & Rescue proudly serves various districts throughout Los Santos. Each station is strategically positioned to provide rapid emergency response to our communities:</p>
-
-            <div class="locations-container">
-                <!-- Location 3 -->
-                <div class="location-card">
-                    <div class="location-image">
-                        <!-- Replace with actual location image -->
-                        <img src="https://r2.fivemanage.com/image/m1tgP7jIjuSy.png" alt="Davis Station">
-                    </div>
-                    <div class="location-name">
-                        <br>Davis Station </br>
-                        <br> Postal code: 838 </br>
-                    </div>
-                </div>
-
-
-                <!-- Location 5 -->
-                <div class="location-card">
-                    <div class="location-image">
-                        <!-- Replace with actual location image -->
-                        <img src="https://r2.fivemanage.com/image/XnpzVRZ5zNQg.png" alt="El Burro Heights Station">
-                    </div>
-                    <div class="location-name">
-                        <br> El Burro Heights station </br>
-                        <br> Postal code: 794 </br>
-                    </div>
-                </div>
-
-                <!-- Location 6 -->
-                <div class="location-card">
-                    <div class="location-image">
-                        <!-- Replace with actual location image -->
-                        <img src="https://r2.fivemanage.com/image/eAdJ1J5CPgJR.png" alt="Paleto Bay Station">
-                    </div>
-                    <div class="location-name">
-                        <br>Paleto Bay Station</br>
-                        <br> Postal code: ??? </br>
-                    </div>
-                </div>
-                <!-- Location 1 -->
-                <div class="location-card">
-                    <div class="location-image">
-                        <!-- Replace with actual location image -->
-                        <img src="https://r2.fivemanage.com/image/ExsaGptrltQn.png" alt="LSIA Station">
-                    </div>
-                    <div class="location-name">
-                        <br> LSIA Fire Station </br>
-                        <br> Postal code: 890 </br>
-                    </div>
-                </div>
-                <!-- Location 1 -->
-                <div class="location-card">
-                    <div class="location-image">
-                        <!-- Replace with actual location image -->
-                        <img src="https://r2.fivemanage.com/image/isJHOkoOTf8c.png" alt="Downtown Station">
-                    </div>
-                    <div class="location-name">
-                        <br>Sandy Shores Station </br>
-                        <br> Postal code: ??? </br>
-                    </div>
-                </div>
-                <!-- Location 1 -->
-                <div class="location-card">
-                    <div class="location-image">
-                        <!-- Replace with actual location image -->
-                        <img src="https://r2.fivemanage.com/image/HRbvNxHHN2T5.png" alt="Downtown Station">
-                    </div>
-                    <div class="location-name">
-                        <br>Fort Zancudo Station </br>
-                        <br> Postal code: ??? </br>
-                    </div>
-                </div>
-
-
-
-                <!-- Location 4 -->
-                <div class="location-card">
-                    <div class="location-image">
-                        <!-- Replace with actual location image -->
-                        <img src="https://r2.fivemanage.com/image/IELkOX2xu5cA.png" alt="Rockford Hills Station">
-                    </div>
-                    <div class="location-name">
-                        <br>Rockford Hills Station </br>
-                        <br> Postal code: ??? </br>
+                    <div class="vehicle-info">
+                        <h3 class="vehicle-name">Fire Truck</h3>
+                        <span class="vehicle-model">Model: firetruk</span>
+                        <div class="vehicle-type fire">Primary Engine</div>
                     </div>
                 </div>
             </div>
-
         </section>
+       <div class="container">
+        <section id="locations">
+            <div class="section-header">
+                <h2>Our Locations</h2>
+                <p>San Andrea's Fire & Rescue proudly serves various districts throughout Los Santos. Each station is strategically positioned to provide rapid emergency response to our communities.</p>
+            </div>
+            
+            <div class="locations-grid">
+                <!-- Davis Station -->
+                <div class="location-card">
+                    <div class="location-image">
+                        <img src="https://r2.fivemanage.com/image/m1tgP7jIjuSy.png" alt="Davis Station">
+                        <div class="location-status">Active</div>
+                    </div>
+                    <div class="location-info">
+                        <h3 class="location-name">Davis Station</h3>
+                        <p class="location-postal">Postal Code: <span>838</span></p>
+                        <div class="location-amenities">
+                            <span class="amenity">Engine Bay</span>
+                            <span class="amenity">Medical Unit</span>
+                            <span class="amenity">Command Center</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- El Burro Heights Station -->
+                <div class="location-card">
+                    <div class="location-image">
+                        <img src="https://r2.fivemanage.com/image/XnpzVRZ5zNQg.png" alt="El Burro Heights Station">
+                        <div class="location-status">Active</div>
+                    </div>
+                    <div class="location-info">
+                        <h3 class="location-name">El Burro Heights Station</h3>
+                        <p class="location-postal">Postal Code: <span>794</span></p>
+                        <div class="location-amenities">
+                            <span class="amenity">Engine Bay</span>
+                            <span class="amenity">Emergency Response</span>
+                            <span class="amenity">Training Facility</span>
+                        </div>
+                    </div>
+                </div>
+                
 
+                
+                <!-- LSIA Station -->
+                <div class="location-card">
+                    <div class="location-image">
+                        <img src="https://r2.fivemanage.com/image/ExsaGptrltQn.png" alt="LSIA Station">
+                        <div class="location-status">Active</div>
+                    </div>
+                    <div class="location-info">
+                        <h3 class="location-name">LSIA Fire Station</h3>
+                        <p class="location-postal">Postal Code: <span>890</span></p>
+                        <div class="location-amenities">
+                            <span class="amenity">Aircraft Response</span>
+                            <span class="amenity">Hazmat Team</span>
+                            <span class="amenity">Emergency Command</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sandy Shores Station -->
+                <div class="location-card">
+                    <div class="location-image">
+                        <img src="https://r2.fivemanage.com/image/isJHOkoOTf8c.png" alt="Sandy Shores Station">
+                        <div class="location-status">Not Active</div>
+                    </div>
+                    <div class="location-info">
+                        <h3 class="location-name">Sandy Shores Station</h3>
+                        <p class="location-postal">Postal Code: <span>Pending</span></p>
+                        <div class="location-amenities">
+                            <span class="amenity">Engine Bay</span>
+                            <span class="amenity">Desert Response</span>
+                            <span class="amenity">Water Tanker</span>
+                        </div>
+                    </div>
+                </div>
+                                <!-- Paleto Bay Station -->
+                <div class="location-card">
+                    <div class="location-image">
+                        <img src="https://r2.fivemanage.com/image/eAdJ1J5CPgJR.png" alt="Paleto Bay Station">
+                        <div class="location-status">Active</div>
+                    </div>
+                    <div class="location-info">
+                        <h3 class="location-name">Paleto Bay Station</h3>
+                        <div class="location-status">Not Active</div>
+                        <div class="location-amenities">
+                            <span class="amenity">Engine Bay</span>
+                            <span class="amenity">Wilderness Response</span>
+                            <span class="amenity">Community Center</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fort Zancudo Station -->
+                <div class="location-card">
+                    <div class="location-image">
+                        <img src="https://r2.fivemanage.com/image/HRbvNxHHN2T5.png" alt="Fort Zancudo Station">
+                        <div class="location-status">Active</div>
+                    </div>
+                    <div class="location-info">
+                        <h3 class="location-name">Fort Zancudo Station</h3>
+                        <p class="location-postal">Postal Code: <span>Pending</span></p>
+                        <div class="location-amenities">
+                            <span class="amenity">Hazmat Response</span>
+                            <span class="amenity">Aircraft Response</span>
+                            <span class="amenity">Military Support</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Rockford Hills Station -->
+                <div class="location-card">
+                    <div class="location-image">
+                        <img src="https://r2.fivemanage.com/image/IELkOX2xu5cA.png" alt="Rockford Hills Station">
+                        <div class="location-status">Not Active</div>
+                    </div>
+                    <div class="location-info">
+                        <h3 class="location-name">Rockford Hills Station</h3>
+                        <p class="location-postal">Postal Code: <span>Pending</span></p>
+                        <div class="location-amenities">
+                            <span class="amenity">Engine Bay</span>
+                            <span class="amenity">Medical Response</span>
+                            <span class="amenity">High-Rise Rescue</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="team" class="section">
             <h2>Meet Our Team</h2>
             <p>Our dedicated team of professionals works around the clock to keep San Andrea safe. Get to know some of our leadership:</p>
