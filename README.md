@@ -138,13 +138,10 @@ Our dedicated team of professionals works around the clock to keep San Andrea sa
 
 ## Team Members
 
-- **FDSV-1 | John K.**
-  - Role: Commisioner
-  - ![Fire Chief](https://avatars.githubusercontent.com/u/206775945?s=200&v=4)
 
 - **Jaxon Reid**
-  - Role: Battalion Chief
-  - ![Deputy Chief](https://avatars.githubusercontent.com/u/206775945?s=200&v=4)
+  - Role: Commisioner
+  - ![Commisioner](https://avatars.githubusercontent.com/u/206775945?s=200&v=4)
 
 - **James Spencer**
   - Role: Battalion Chief
